@@ -1,0 +1,16 @@
+<div class="article" *ngIf="showArticle">
+    <app-article [fullArticle]="selectedArticle"></app-article>
+</div>
+
+
+<div class="row" *ngIf="show">
+    <div class="col-sm-4">
+        <app-discover-list (listOfTopics)="addList($event)"
+        ></app-discover-list>
+    </div>
+    <div class="col-sm-6">
+        <app-article-list [lisofArticles]="topicList" (showValue)="showFullArticle($event)" ></app-article-list>
+    </div>
+</div>
+
+

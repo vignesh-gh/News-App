@@ -1,0 +1,4 @@
+<ul class="list-group" *ngFor="let article of lisofArticles">
+    <li class="list-group-item"><a (click)="showFullArticle(article)"><img src="{{article.img}}" alt="image" style="max-height:100px;">
+    <p>{{article.content}}</p></a></li>   
+</ul>

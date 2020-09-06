@@ -1,0 +1,5 @@
+<ul class="list-group move-left" *ngFor="let article of lisofArticles">
+    <li class="list-group-item"><a (click)="showFullArticle(article)" style="cursor:pointer"><img src="{{article.img}}" alt="image" style="max-height:100px;">
+    <p>{{article.content}}</p></a></li>
+    <button class="btn btn-primary" (click)="addtoMyList(article)">Add To MyList</button>   
+</ul>
